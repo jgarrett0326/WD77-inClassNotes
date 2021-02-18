@@ -18,10 +18,22 @@ let fellowshipOfTheRing = {
     formed: '25 October, 3018',
     dissolved: '26 February, 3019'
 }
+
+    for(let fellow in fellowshipOfTheRing.members) {
+        console.log(fellow)
+    }
 /* 
 * SILVER
     - Add a conditional to the for in loop that checks if the characters name does not begin with a vowel. Then, using string interpolation, console.log either '__'s name does not begin with a vowel' or '__'s name does begin with a vowel'.
 */
+
+    for(let fellow in fellowshipOfTheRing.members) {
+        //console.log(fellow);
+       if(fellow.startsWith ['a','e','i','o','u']){
+        console.log(`${fellow}'s`, "name does begin with a vowel.");
+    } else (fellow.startsWith ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z'])
+        console.log(`${fellow}'s`, "name does not begin with a vowel.");
+}
 /* 
 * GOLD
     - Declare a globally scoped variable of arr that is initialized as an empty array. If the characters name does not begin with a vowel, add that character to the new array, and then console.log the array.
